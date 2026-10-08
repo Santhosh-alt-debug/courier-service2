@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-IN" class="hero-page">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stackly — Courier and parcel delivery across India</title>
+<meta name="description" content="Doorstep pickup, live tracking and delivery to 19,000+ pincodes from Salem, Tamil Nadu.">
+<meta name="theme-color" content="#0F1E33">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="index.html#main">Skip to content</a>
+<header class="site-header">
+<div class="pill">
+<a class="brand" href="index.html" data-home-logo aria-label="Stackly home"><img src="logo-light.webp" alt="Stackly" width="138" height="40"></a>
+<nav class="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="services.html">Services</a><a href="track.html">Track</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+<div class="head-cta"><a class="btn btn-ghost btn-sm" href="signin.html">Sign in</a><a class="btn btn-primary btn-sm on-dark" href="signup.html">Create account</a></div>
+<button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span></button>
+</div>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+<nav aria-label="Mobile"><a class="m-link" href="index.html" aria-current="page">Home</a><a class="m-link" href="services.html">Services</a><a class="m-link" href="track.html">Track</a><a class="m-link" href="pricing.html">Pricing</a><a class="m-link" href="about.html">About</a><a class="m-link" href="contact.html">Contact</a></nav>
+<div class="btn-row on-dark"><a class="btn btn-ghost" href="signin.html">Sign in</a><a class="btn btn-primary" href="signup.html">Create account</a></div>
+</div>
+</header><main id="main">
+<section class="hero dark" aria-labelledby="hero-h">
+<div class="hero-media"><img src="hero-van.webp" alt="A white delivery van moving fast along a city road" width="2400" height="1088" fetchpriority="high"></div>
+<div class="wrap hero-inner">
+<div class="hero-grid">
+<div>
+<span class="label">Courier &amp; logistics · Salem</span>
+<h1 id="hero-h"><span class="hero-line"><span>We keep your parcels</span></span> <em class="hero-line"><span>moving across India</span></em></h1>
+<div class="hero-fade"><p class="lede">Doorstep pickup, live tracking and delivery to 19,000+ pincodes. Same-day within your region, next-day across the country, and 40 countries abroad.</p>
+<div class="btn-row"><a class="btn btn-primary" href="pricing.html">Get a quote</a><a class="btn btn-ghost" href="signup.html">Book a pickup</a></div></div>
+</div>
+<div class="track-card hero-fade" data-tilt>
+<div class="tabs" role="tablist" aria-label="Quick actions"><button type="button" role="tab" id="tab-t" aria-controls="pane-t" aria-selected="true">Track a parcel</button><button type="button" role="tab" id="tab-s" aria-controls="pane-s" aria-selected="false" tabindex="-1">Pick a speed</button></div>
+<div id="pane-t" role="tabpanel" aria-labelledby="tab-t">
+<form data-validate="track" class="quick-track">
+<div class="field "><label for="q-id">Tracking ID</label><input class="input" id="q-id" name="q-id" type="text" data-v="trackid" maxlength="12" autocomplete="off" placeholder="SK1234567890" ></div>
+<button class="btn btn-primary btn-block" type="submit">Track now</button>
+</form>
+<p style="margin:12px 0 0">Your ID is on the booking SMS. Try <strong>SK2610064821</strong>.</p>
+</div>
+<div id="pane-s" role="tabpanel" aria-labelledby="tab-s" hidden>
+<div class="c3d" aria-roledescription="carousel" aria-label="Delivery speeds"><div class="c3d-ring"><div class="c3d-card"><h3>Same-day</h3><p>Within your region, before 9 pm.</p><span class="price">from ₹89</span></div><div class="c3d-card"><h3>Next-day</h3><p>Metro to metro by the next evening.</p><span class="price">from ₹59</span></div><div class="c3d-card"><h3>International</h3><p>40 countries, customs included.</p><span class="price">from ₹1,450</span></div></div></div>
+<div class="c3d-nav"><button class="icon-btn" type="button" data-c3d="prev" aria-label="Previous speed"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><span class="c3d-live sr-only" aria-live="polite"></span><button class="icon-btn" type="button" data-c3d="next" aria-label="Next speed"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+<a class="btn btn-primary btn-block" href="pricing.html" style="margin-top:14px">Get a quote</a>
+</div>
+</div>
+</div>
+<div class="hero-stats" data-fx="count">
+<div><strong><span data-count="19400">19,400</span><span class="suf">+</span></strong><span>Pincodes served</span></div>
+<div><strong><span data-count="96.8">96.8</span><span class="suf">%</span></strong><span>On-time, last 90 days*</span></div>
+<div><strong><span data-count="40">40</span></strong><span>Countries reached</span></div>
+<div><strong>24<span class="suf">/7</span></strong><span>Tracking and support</span></div>
+</div>
+</div>
+</section>
+
+<section class="section" aria-labelledby="svc-h">
+<div class="wrap">
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Same-day</span><span>Next-day</span><span>International</span><span>Business shipping</span><span>Cash on delivery</span><span>Packing help</span><span>Same-day</span><span>Next-day</span><span>International</span><span>Business shipping</span><span>Cash on delivery</span><span>Packing help</span></div></div>
+<div class="sec-head" data-reveal="up">
+<span class="label">What we deliver</span><p class="intro">Six services, one pickup, one tracking page.</p>
+<h2>Pick the speed <em>your parcel needs</em></h2></div>
+<div class="rail" role="list" aria-label="Services"><article class="card" data-reveal="up"><div class="card-body"><div class="svc-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Same-day</h3><p>Booked by 11 am, delivered by 9 pm within the same region.</p><div class="card-foot"><span class="price">from ₹89</span><a class="btn btn-ghost btn-sm" href="404.html">Details</a></div></div></article><article class="card" data-reveal="up"><div class="card-body"><div class="svc-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Next-day</h3><p>Door to door across 19,000+ pincodes, by the next evening on metro routes.</p><div class="card-foot"><span class="price">from ₹59</span><a class="btn btn-ghost btn-sm" href="404.html">Details</a></div></div></article><article class="card" data-reveal="up"><div class="card-body"><div class="svc-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>International</h3><p>Documents and parcels to 40 countries with customs paperwork handled.</p><div class="card-foot"><span class="price">from ₹1,450</span><a class="btn btn-ghost btn-sm" href="404.html">Details</a></div></div></article><article class="card" data-reveal="up"><div class="card-body"><div class="svc-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></div><h3>Business shipping</h3><p>Daily pickups, bulk rates and one monthly invoice for sellers.</p><div class="card-foot"><span class="price">custom rates</span><a class="btn btn-ghost btn-sm" href="404.html">Details</a></div></div></article><article class="card" data-reveal="up"><div class="card-body"><div class="svc-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 10v4M18 10v4"/></svg></div><h3>Cash on delivery</h3><p>We collect from your buyer and settle to your bank in 3 working days.</p><div class="card-foot"><span class="price">₹45 per parcel</span><a class="btn btn-ghost btn-sm" href="404.html">Details</a></div></div></article><article class="card" data-reveal="up"><div class="card-body"><div class="svc-icon"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 11h18M12 7v4M8 3h8l1 4H7z"/></svg></div><h3>Packing help</h3><p>Boxes, bubble wrap and fragile labels at any Stackly counter.</p><div class="card-foot"><span class="price">from ₹25</span><a class="btn btn-ghost btn-sm" href="404.html">Details</a></div></div></article></div>
+<div class="btn-row" style="margin-top:24px"><a class="btn btn-primary" href="services.html">Compare all services</a></div>
+</div>
+</section>
+
+<section class="section tint" aria-labelledby="pair-h">
+<div class="wrap split">
+<div class="pair" data-reveal="left">
+<div data-reveal="curtain" class="frame round p-main"><img src="home-doorstep.webp" alt="A Stackly courier waits while a customer signs for her parcel at the door" width="1400" height="933" loading="lazy" decoding="async" ></div>
+<div data-reveal="curtain" class="frame circle p-sub"><img src="home-handover.webp" alt="Hands passing a kraft parcel box from courier to customer" width="900" height="900" loading="lazy" decoding="async" ></div>
+<span class="chip"><span class="dot"></span>Signed at 6:42 pm</span>
+</div>
+<div data-reveal="right">
+<div class="sec-head" data-reveal="up">
+<span class="label">Proof at the door</span><p class="intro">Every handover leaves a record you can check.</p>
+<h2>Signed, photographed <em>and on your phone</em></h2></div>
+<p class="lede">Our couriers capture an OTP or signature and a doorstep photo for every delivery. You see it on the tracking page within a minute, and so does your buyer.</p>
+<ul class="list-plain"><li><svg class="ico ico-acc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>OTP on every COD and high-value parcel</li><li><svg class="ico ico-acc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Doorstep photo saved for 90 days</li><li><svg class="ico ico-acc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Two re-attempts before return, at no charge</li></ul>
+<a class="btn btn-primary" href="track.html">Track now</a>
+</div>
+</div>
+</section>
+
+<section class="section dark" aria-labelledby="cov-h">
+<div class="wrap">
+<div class="sec-head" data-reveal="up">
+<span class="label">Coverage</span><p class="intro">Built out from one hub in Salem since 2014.</p>
+<h2>Coverage that grows <em>with every route</em></h2></div>
+<svg class="route  route-band" viewBox="0 0 1000 120" data-fx="route" aria-hidden="true" focusable="false">
+<defs><mask id="rm1" maskUnits="userSpaceOnUse"><path class="mpath" d="M20 80 C 190 6, 330 116, 500 62 S 800 14, 980 68" stroke="#fff" stroke-width="12" fill="none"/></mask></defs>
+<path class="ghost" d="M20 80 C 190 6, 330 116, 500 62 S 800 14, 980 68"/><path class="path" d="M20 80 C 190 6, 330 116, 500 62 S 800 14, 980 68" mask="url(#rm1)"/>
+<circle class="pin" cx="20" cy="80" r="8"/><circle class="pin" cx="980" cy="68" r="8"/>
+<g class="van" transform="translate(20 80)"><g transform="translate(-20 -13)"><rect x="0" y="2" width="26" height="18" rx="3" fill="#E6D3A3" stroke="#0B0E13" stroke-width="1.5"/><path d="M26 7h7l5 6v7H26z" fill="#C9A86A" stroke="#0B0E13" stroke-width="1.5"/><circle cx="8" cy="22" r="3.5" fill="#0B0E13" stroke="#C9A86A"/><circle cx="31" cy="22" r="3.5" fill="#0B0E13" stroke="#C9A86A"/></g></g>
+</svg>
+<div class="stats" data-fx="count">
+<div class="stat" data-reveal="up"><strong><span data-count="19400">19,400</span><span class="suf">+</span></strong><span>Pincodes in India</span></div>
+<div class="stat" data-reveal="up"><strong><span data-count="62">62</span></strong><span>Branches and counters</span></div>
+<div class="stat" data-reveal="up"><strong><span data-count="1350">1,350</span><span class="suf">+</span></strong><span>Delivery agents</span></div>
+<div class="stat" data-reveal="up"><strong><span data-count="4.2">4.2</span><span class="suf">L</span></strong><span>Parcels a month</span></div>
+</div>
+<p class="caveat">*On-time means delivered on or before the date promised at booking, counted across all domestic shipments from July to September 2026. Parcels held for customer reasons (address not found, buyer not available, COD refused) are excluded. Remote pincodes in the North-East and islands can take 2–4 extra days.</p>
+</div>
+</section>
+
+<section class="section tint" aria-labelledby="how-h">
+<div class="wrap">
+<div class="sec-head" data-reveal="up">
+<span class="label">How it works</span><p class="intro">From booking to doorstep in four steps.</p>
+<h2>Book in two minutes, <em>we handle the rest</em></h2></div>
+<ol class="steps" style="list-style:none;padding:0;margin:0">
+<li class="step" data-reveal="up"><span class="n">1</span><h3>Book online</h3><p>Enter pincodes and weight. You get a price and a tracking ID instantly.</p></li>
+<li class="step" data-reveal="up"><span class="n">2</span><h3>We pick up</h3><p>An agent collects from your door in a 2-hour slot you choose.</p></li>
+<li class="step" data-reveal="up"><span class="n">3</span><h3>Sorted at the hub</h3><p>Scanned at every hub, so the tracking page never goes quiet.</p></li>
+<li class="step" data-reveal="up"><span class="n">4</span><h3>Delivered</h3><p>OTP or signature, a doorstep photo, and an SMS to you.</p></li>
+</ol>
+</div>
+</section>
+
+<section class="section" aria-labelledby="t-h">
+<div class="wrap">
+<div class="sec-head center" data-reveal="up">
+<span class="label">Customers</span><p class="intro">Sellers, labs and families who ship with us every week.</p>
+<h2>Trusted by people <em>who cannot wait</em></h2></div>
+<div class="tcar" aria-roledescription="carousel" aria-label="Testimonials"><div class="ttrack"><div class="tslide"><blockquote class="quote"><p>“We ship 300 sarees a week from Salem to buyers across India. COD money lands in our account in 3 working days, every week, without us chasing anyone.”</p><footer><strong>Meenakshi R.</strong> — Owner, Kanchi Weaves, Salem</footer></blockquote></div><div class="tslide"><blockquote class="quote"><p>“Our lab sends samples to Coimbatore every evening. Stackly picks up at 7 pm and they are on the bench by 10 the next morning.”</p><footer><strong>Dr. Arun Prakash</strong> — Operations, Vel Diagnostics</footer></blockquote></div><div class="tslide"><blockquote class="quote"><p>“I sent my daughter's documents to Melbourne for her admission. The tracking page told me exactly where they were at every step.”</p><footer><strong>Lakshmi Narayanan</strong> — Customer, Kumbakonam</footer></blockquote></div></div></div>
+<div class="tnav"><button class="icon-btn" type="button" data-t="prev" aria-label="Previous testimonial"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><div class="dots"><button type="button" aria-label="Show testimonial 1"></button><button type="button" aria-label="Show testimonial 2"></button><button type="button" aria-label="Show testimonial 3"></button></div><button class="icon-btn" type="button" data-t="next" aria-label="Next testimonial"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+</div>
+</section>
+
+<section class="section tint" aria-labelledby="faq-h">
+<div class="wrap">
+<div class="sec-head" data-reveal="up">
+<span class="label">Questions</span><p class="intro">Quick answers before you book.</p>
+<h2>Good to know <em>before you ship</em></h2></div>
+<div class="faq"><details data-reveal="up"><summary>How late can I book a same-day pickup?</summary><p>Book by 11 am for delivery the same evening within your region. Bookings after 11 am go out first thing the next morning.</p></details><details data-reveal="up"><summary>What if nobody is home?</summary><p>The courier calls you and the receiver. We make two more attempts on the next working days at no extra charge before returning the parcel.</p></details><details data-reveal="up"><summary>Can I pay the courier in cash?</summary><p>Yes. You can pay online, by UPI at pickup, or in cash at any Stackly counter. Business accounts are billed monthly.</p></details><details data-reveal="up"><summary>Do you deliver to PO boxes?</summary><p>No. We need a street address and a phone number so the courier can reach the receiver.</p></details><details data-reveal="up"><summary>How do I raise a claim for a damaged parcel?</summary><p>Raise it from your dashboard within 48 hours of delivery with photos of the box and contents. Insured parcels are settled within 7 working days.</p></details></div>
+</div>
+</section>
+<section class="band dark band-photo" aria-labelledby="cta-h"><img src="band-route.webp" alt="Aerial view of a highway interchange at sunrise" width="2400" height="1121" loading="lazy" decoding="async" class="bg" >
+<div class="wrap"><div class="sec-head" data-reveal="left"><span class="label">Ready when you are</span><p class="intro">Book before 11 am and it can be across Tamil Nadu by tonight.</p>
+<h2 id="cta-h">Your next parcel, <em>picked up today</em></h2></div><div class="btn-row on-dark" data-reveal="up"><a class="btn btn-primary" href="signup.html">Book a pickup</a><a class="btn btn-ghost" href="pricing.html">Get a quote</a></div></div></section>
+</main><footer class="site-footer">
+<div class="wrap">
+<div class="foot-grid">
+<div class="foot-brand"><a class="brand" href="index.html" data-home-logo aria-label="Stackly home"><img src="logo-light.webp" alt="Stackly" width="138" height="40" loading="lazy"></a>
+<p>Parcel pickup and delivery from Salem to 19,000+ pincodes across India, and to 40 countries.</p>
+<p><a href="404.html">+91 427 240 1100</a><br><a href="404.html">hello@stackly.in</a></p>
+<p class="social"><a href="404.html" aria-label="Stackly on LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4v11H3zM10 9.5h3.8v1.6h.1c.5-1 1.8-1.9 3.7-1.9 4 0 4.4 2.6 4.4 6v5.3h-4v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5v4.8h-4z"/></svg></a><a href="404.html" aria-label="Stackly on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="404.html" aria-label="Stackly on X"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></p></div>
+<div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="track.html">Track</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h4>Services</h4><ul><li><a href="404.html">Same-day delivery</a></li><li><a href="404.html">Next-day delivery</a></li><li><a href="404.html">International</a></li><li><a href="404.html">Business shipping</a></li><li><a href="404.html">Cash on delivery</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="404.html">Careers</a></li><li><a href="404.html">Partner with us</a></li><li><a href="404.html">Press</a></li><li><a href="404.html">Help centre</a></li></ul></div>
+</div>
+<div class="foot-bottom"><span>© 2026 Stackly Technologies Pvt. Ltd., Salem, Tamil Nadu</span><span class="legal-links"><a href="404.html">Privacy policy</a><a href="404.html">Terms &amp; conditions</a></span></div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-IN" class="hero-page">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Stackly — Salem courier desk</title>
+<meta name="description" content="Enquiry form, branches, map and office hours for Stackly courier.">
+<meta name="theme-color" content="#0F1E33">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="contact.html#main">Skip to content</a>
+<header class="site-header">
+<div class="pill">
+<a class="brand" href="index.html" data-home-logo aria-label="Stackly home"><img src="logo-light.webp" alt="Stackly" width="138" height="40"></a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="track.html">Track</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav>
+<div class="head-cta"><a class="btn btn-ghost btn-sm" href="signin.html">Sign in</a><a class="btn btn-primary btn-sm on-dark" href="signup.html">Create account</a></div>
+<button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span></button>
+</div>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+<nav aria-label="Mobile"><a class="m-link" href="index.html">Home</a><a class="m-link" href="services.html">Services</a><a class="m-link" href="track.html">Track</a><a class="m-link" href="pricing.html">Pricing</a><a class="m-link" href="about.html">About</a><a class="m-link" href="contact.html" aria-current="page">Contact</a></nav>
+<div class="btn-row on-dark"><a class="btn btn-ghost" href="signin.html">Sign in</a><a class="btn btn-primary" href="signup.html">Create account</a></div>
+</div>
+</header><main id="main"><section class="page-hero dark has-photo" aria-labelledby="ph-h"><div class="ph-media"><img src="hero-contact.webp" alt="The Stackly head office reception and waiting area" width="2400" height="1412" fetchpriority="high"></div><div class="wrap">
+<p class="crumbs"><a href="index.html">Home</a> / Contact</p>
+<span class="label">Contact</span>
+<h1 id="ph-h">Talk to <em>the Salem desk</em></h1>
+<p class="lede" style="margin-top:18px">Questions about a parcel, a quote or a business account. We reply within one working day.</p>
+<svg class="route  route-band" viewBox="0 0 1000 120" data-fx="route" aria-hidden="true" focusable="false">
+<defs><mask id="rm11" maskUnits="userSpaceOnUse"><path class="mpath" d="M20 80 C 190 6, 330 116, 500 62 S 800 14, 980 68" stroke="#fff" stroke-width="12" fill="none"/></mask></defs>
+<path class="ghost" d="M20 80 C 190 6, 330 116, 500 62 S 800 14, 980 68"/><path class="path" d="M20 80 C 190 6, 330 116, 500 62 S 800 14, 980 68" mask="url(#rm11)"/>
+<circle class="pin" cx="20" cy="80" r="8"/><circle class="pin" cx="980" cy="68" r="8"/>
+<g class="van" transform="translate(20 80)"><g transform="translate(-20 -13)"><rect x="0" y="2" width="26" height="18" rx="3" fill="#E6D3A3" stroke="#0B0E13" stroke-width="1.5"/><path d="M26 7h7l5 6v7H26z" fill="#C9A86A" stroke="#0B0E13" stroke-width="1.5"/><circle cx="8" cy="22" r="3.5" fill="#0B0E13" stroke="#C9A86A"/><circle cx="31" cy="22" r="3.5" fill="#0B0E13" stroke="#C9A86A"/></g></g>
+</svg>
+</div></section>
+<section class="section" aria-labelledby="cf-h"><div class="wrap split split-form contact-split">
+<div data-reveal="left">
+<div class="sec-head" data-reveal="up">
+<span class="label">Send an enquiry</span><p class="intro">Tell us what you need and how to reach you.</p>
+<h2>Write to <em>our team</em></h2></div>
+<form data-validate="contact" class="panel" style="padding:clamp(18px,3vw,32px)">
+<div class="grid-2"><div class="field "><label for="ct-first">First name</label><input class="input" id="ct-first" name="ct-first" type="text" data-v="name" maxlength="16" autocomplete="given-name" ></div><div class="field "><label for="ct-last">Last name</label><input class="input" id="ct-last" name="ct-last" type="text" data-v="name" maxlength="16" autocomplete="family-name" ></div></div>
+<div class="field "><label for="ct-email">Email</label><input class="input" id="ct-email" name="ct-email" type="email" data-v="email" maxlength="64" autocomplete="email" inputmode="email" ></div>
+<div class="field "><label for="ct-phone">Phone</label><input class="input" id="ct-phone" name="ct-phone" type="tel" data-v="phone" maxlength="10" autocomplete="tel-national" inputmode="numeric" ></div>
+<div class="field"><label for="ct-topic">Topic</label><select class="input" id="ct-topic" name="ct-topic" data-v="select"><option value="">Choose…</option><option value="parcel">A parcel I sent</option><option value="quote">A quote</option><option value="business">Business account</option><option value="claim">Damage or loss claim</option><option value="other">Something else</option></select></div>
+<div class="field"><label for="ct-msg">Message</label><textarea class="input" id="ct-msg" name="ct-msg" data-v="text" maxlength="600" rows="5"></textarea></div>
+<button class="btn btn-primary" type="submit">Send enquiry</button>
+</form>
+</div>
+<div data-reveal="right">
+<div class="frame round" data-reveal="curtain" style="aspect-ratio:3/2;margin-bottom:20px"><img src="contact-desk.webp" alt="A customer is helped at the Stackly service counter" width="1400" height="933" loading="lazy" decoding="async" ></div>
+<div class="info-list">
+<div class="info"><svg class="ico ico-acc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Salem head office</strong><br>14, Omalur Main Road, Fairlands, Salem, Tamil Nadu 636016</div></div>
+<div class="info"><svg class="ico ico-acc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><div><strong>Phone</strong><br><a href="404.html">+91 427 240 1100</a></div></div>
+<div class="info"><svg class="ico ico-acc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><strong>Email</strong><br><a href="404.html">hello@stackly.in</a></div></div>
+</div></div>
+</div></section>
+
+<section class="section tint" aria-labelledby="b-h"><div class="wrap">
+<div class="sec-head" data-reveal="up">
+<span class="label">Branches</span><p class="intro">Counters where you can drop off and pay in person.</p>
+<h2>Find <em>a branch</em></h2></div>
+<div class="cards cards-4">
+<div class="card" data-reveal="up"><div class="card-body"><h3>Salem, Fairlands</h3><p>14, Omalur Main Road · 636016</p><p><a href="404.html">+91 427 240 1100</a></p></div></div>
+<div class="card" data-reveal="up"><div class="card-body"><h3>Coimbatore, Gandhipuram</h3><p>72, Cross Cut Road · 641012</p><p><a href="404.html">+91 422 435 0220</a></p></div></div>
+<div class="card" data-reveal="up"><div class="card-body"><h3>Chennai, Guindy</h3><p>5, GST Road, Guindy · 600032</p><p><a href="404.html">+91 44 4610 8800</a></p></div></div>
+<div class="card" data-reveal="up"><div class="card-body"><h3>Kumbakonam, Town</h3><p>21, Big Street · 612001</p><p><a href="404.html">+91 435 242 0900</a></p></div></div>
+</div></div></section>
+
+<section class="section" aria-labelledby="mp-h"><div class="wrap split">
+<div data-reveal="left"><div class="sec-head" data-reveal="up">
+<span class="label">Find us</span><p class="intro">Ten minutes from Salem Junction.</p>
+<h2>Salem head office <em>on the map</em></h2></div>
+<p class="lede">Parking for two-wheelers at the front. Business drop-offs use the loading bay on the side lane.</p></div>
+<div class="map" data-reveal="right"><svg viewBox="0 0 600 380" role="img" aria-label="Map sketch of Fairlands, Salem, with the Stackly office near Omalur Main Road" style="width:100%;height:auto">
+<rect width="600" height="380" fill="#E7EEF4"/><path d="M0 250 L600 170" stroke="#FFFFFF" stroke-width="26"/><path d="M190 0 L250 380" stroke="#FFFFFF" stroke-width="20"/><path d="M420 0 C 400 120 460 260 430 380" stroke="#FFFFFF" stroke-width="14" fill="none"/>
+<rect x="40" y="40" width="110" height="90" rx="8" fill="#D6E1EA"/><rect x="290" y="40" width="100" height="70" rx="8" fill="#D6E1EA"/><rect x="470" y="230" width="100" height="110" rx="8" fill="#D6E1EA"/><rect x="40" y="290" width="130" height="70" rx="8" fill="#CFE6DC"/>
+<text x="16" y="236" font-family="Manrope" font-size="14" fill="#4A5D73" transform="rotate(-7 16 236)">Omalur Main Road</text>
+<circle cx="300" cy="200" r="22" fill="#0F1E33"/><circle cx="300" cy="200" r="8" fill="#8ECDB4"/>
+<text x="330" y="207" font-family="Manrope" font-weight="700" font-size="16" fill="#0F1E33">Stackly HQ</text></svg></div>
+</div></section>
+
+<section class="section tint" aria-labelledby="oh-h"><div class="wrap">
+<div class="sec-head" data-reveal="up">
+<span class="label">Office hours</span><p class="intro">Counter and phone support times.</p>
+<h2>When <em>we are open</em></h2></div>
+<div class="table-wrap" data-reveal="up"><table class="tbl"><caption class="sr-only">Office hours</caption><thead><tr><th scope="col">Day</th><th scope="col">Salem counter</th><th scope="col">Phone support</th></tr></thead><tbody><tr><td data-th="Day">Monday – Friday</td><td data-th="Salem counter">8:00 am – 9:00 pm</td><td data-th="Phone support">9:00 am – 7:00 pm</td></tr><tr><td data-th="Day">Saturday</td><td data-th="Salem counter">8:00 am – 6:00 pm</td><td data-th="Phone support">9:00 am – 5:00 pm</td></tr><tr><td data-th="Day">Sunday</td><td data-th="Salem counter">Closed</td><td data-th="Phone support">10:00 am – 2:00 pm</td></tr><tr><td data-th="Day">Public holidays</td><td data-th="Salem counter">Closed</td><td data-th="Phone support">10:00 am – 2:00 pm</td></tr></tbody></table></div>
+</div></section>
+
+<section class="section" aria-labelledby="cq-h"><div class="wrap">
+<div class="sec-head" data-reveal="up">
+<span class="label">Contact questions</span><p class="intro">Before you write in.</p>
+<h2>Quick <em>answers</em></h2></div>
+<div class="faq"><details data-reveal="up"><summary>How fast will you reply?</summary><p>Within one working day by email. Calls are answered in under two minutes on average during support hours.</p></details><details data-reveal="up"><summary>Can I drop a parcel at any branch?</summary><p>Yes. Any counter accepts parcels for any service. Bring the booking ID or book at the counter.</p></details><details data-reveal="up"><summary>Where do I send a damage claim?</summary><p>Raise it from your dashboard with photos. If you cannot sign in, choose Damage or loss claim in the form above.</p></details></div>
+</div></section>
+</main><footer class="site-footer">
+<div class="wrap">
+<div class="foot-grid">
+<div class="foot-brand"><a class="brand" href="index.html" data-home-logo aria-label="Stackly home"><img src="logo-light.webp" alt="Stackly" width="138" height="40" loading="lazy"></a>
+<p>Parcel pickup and delivery from Salem to 19,000+ pincodes across India, and to 40 countries.</p>
+<p><a href="404.html">+91 427 240 1100</a><br><a href="404.html">hello@stackly.in</a></p>
+<p class="social"><a href="404.html" aria-label="Stackly on LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4v11H3zM10 9.5h3.8v1.6h.1c.5-1 1.8-1.9 3.7-1.9 4 0 4.4 2.6 4.4 6v5.3h-4v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5v4.8h-4z"/></svg></a><a href="404.html" aria-label="Stackly on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="404.html" aria-label="Stackly on X"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></p></div>
+<div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="track.html">Track</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h4>Services</h4><ul><li><a href="404.html">Same-day delivery</a></li><li><a href="404.html">Next-day delivery</a></li><li><a href="404.html">International</a></li><li><a href="404.html">Business shipping</a></li><li><a href="404.html">Cash on delivery</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="404.html">Careers</a></li><li><a href="404.html">Partner with us</a></li><li><a href="404.html">Press</a></li><li><a href="404.html">Help centre</a></li></ul></div>
+</div>
+<div class="foot-bottom"><span>© 2026 Stackly Technologies Pvt. Ltd., Salem, Tamil Nadu</span><span class="legal-links"><a href="404.html">Privacy policy</a><a href="404.html">Terms &amp; conditions</a></span></div>
+</div></footer>
+</body>
+</html>

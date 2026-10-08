@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer dashboard — Stackly</title>
+<meta name="description" content="Stackly dashboard">
+<meta name="theme-color" content="#0F1E33">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body class="dash-body" data-role="customer">
+<header class="dash-head">
+<button class="icon-btn side-toggle" type="button" aria-label="Open sidebar" aria-expanded="false" aria-controls="sidebar"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<a class="brand" href="index.html" data-home-logo aria-label="Stackly home"><img src="logo-light.webp" alt="Stackly" width="138" height="40"></a>
+<span class="role-tag">Customer</span>
+<div class="dash-tools" style="position:relative">
+<div class="user-chip"><span class="avatar" data-user-initial aria-hidden="true"></span><span class="who"><strong data-user-full></strong><small data-user-email></small></span></div>
+<button class="icon-btn bell" type="button" aria-label="Notifications" aria-expanded="false" aria-controls="notif"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></svg><span class="badge" aria-hidden="true"></span></button>
+<div class="pop" id="notif" role="region" aria-label="Notifications"><p><strong>SK2610064821 delivered</strong>Signed by R. Priya, 1:05 pm</p><p><strong>Pickup confirmed</strong>Wed 7 Oct, 10 am – 12 pm</p><p><strong>Invoice ready</strong>September 2026</p></div>
+<button class="btn btn-ghost btn-sm logout-btn" type="button" data-logout style="color:#fff"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg><span class="logout-txt">Log out</span></button>
+</div></header>
+<div class="dash">
+<aside class="sidebar" id="sidebar" aria-label="Dashboard"><nav><a href="dashboard-customer.html#overview" class="active"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"/></svg>Overview</a><a href="dashboard-customer.html#shipments"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>Shipments</a><a href="dashboard-customer.html#addresses"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Addresses</a><a href="dashboard-customer.html#book"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h11v10H2zM13 10h4l4 4v2h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Book a pickup</a></nav></aside>
+<div class="scrim" aria-hidden="true"></div>
+<main class="dash-main" id="main"><section class="view" id="overview" aria-label="Welcome back, &lt;span data-user-name&gt;&lt;/span&gt;"><h1>Welcome back, <span data-user-name></span></h1><p class="lede">Here is what is moving on your account this month.</p><div class="metrics">
+<div class="metric"><span>Shipments</span><strong>38</strong></div>
+<div class="metric"><span>In transit</span><strong>6</strong></div>
+<div class="metric"><span>Delivered</span><strong>31</strong></div>
+<div class="metric"><span>Spend</span><strong class="price">₹6,480</strong></div>
+</div>
+<div class="dash-grid">
+<section class="panel" aria-labelledby="ch-h"><h2 id="ch-h">Parcels per week</h2><div class="chart" data-fx="bars" role="img" aria-label="W33: 4, W34: 7, W35: 5, W36: 9, W37: 6, W38: 8, W39: 11, W40: 9"><div class="bar"><i data-h="36"></i><b>W33</b></div><div class="bar"><i data-h="64"></i><b>W34</b></div><div class="bar"><i data-h="45"></i><b>W35</b></div><div class="bar"><i data-h="82"></i><b>W36</b></div><div class="bar"><i data-h="55"></i><b>W37</b></div><div class="bar"><i data-h="73"></i><b>W38</b></div><div class="bar"><i data-h="100"></i><b>W39</b></div><div class="bar"><i data-h="82"></i><b>W40</b></div></div></section>
+<section class="panel" aria-labelledby="nx-h"><h2 id="nx-h">Next pickup</h2>
+<div class="addr"><strong>Wed 7 Oct · 10 am – 12 pm</strong><span>Shop, 4 Bazaar Street, Salem 636001 · 3 parcels</span></div>
+<div class="addr"><strong>Needs your attention</strong><span>SK2610073345 is held: the Madurai address needs a door number.</span></div>
+<a class="btn btn-primary btn-sm" href="dashboard-customer.html#book">Book a pickup</a></section>
+</div></section><section class="view" id="shipments" aria-label="Your" hidden><h2 class="view-title">Your <em>shipments</em></h2><p class="lede">Every parcel booked this month, newest first.</p><div class="table-wrap"><table class="tbl"><caption class="sr-only">All shipments this month</caption><thead><tr><th scope="col">Tracking ID</th><th scope="col">To</th><th scope="col">Service</th><th scope="col">Status</th><th scope="col">Amount</th></tr></thead><tbody id="ship-rows"><tr><td data-th="Tracking ID">SK2610064821</td><td data-th="To">Chennai 600020</td><td data-th="Service">Next-day</td><td data-th="Status"><span class="tag ok">Delivered</span></td><td data-th="Amount"><span class="price">₹96</span></td></tr><tr><td data-th="Tracking ID">SK2610071190</td><td data-th="To">Bengaluru 560034</td><td data-th="Service">Next-day</td><td data-th="Status"><span class="tag note">In transit</span></td><td data-th="Amount"><span class="price">₹142</span></td></tr><tr><td data-th="Tracking ID">SK2610073345</td><td data-th="To">Madurai 625001</td><td data-th="Service">Surface</td><td data-th="Status"><span class="tag warn">Held: address</span></td><td data-th="Amount"><span class="price">₹58</span></td></tr><tr><td data-th="Tracking ID">SK2610074402</td><td data-th="To">Dubai, UAE</td><td data-th="Service">International</td><td data-th="Status"><span class="tag note">Booked</span></td><td data-th="Amount"><span class="price">₹1,712</span></td></tr><tr><td data-th="Tracking ID">SK2610076620</td><td data-th="To">Erode 638001</td><td data-th="Service">Same-day</td><td data-th="Status"><span class="tag ok">Delivered</span></td><td data-th="Amount"><span class="price">₹104</span></td></tr><tr><td data-th="Tracking ID">SK2610077815</td><td data-th="To">Tiruchirappalli 620001</td><td data-th="Service">Surface</td><td data-th="Status"><span class="tag ok">Delivered</span></td><td data-th="Amount"><span class="price">₹64</span></td></tr><tr><td data-th="Tracking ID">SK2610079032</td><td data-th="To">Hyderabad 500081</td><td data-th="Service">Next-day</td><td data-th="Status"><span class="tag note">In transit</span></td><td data-th="Amount"><span class="price">₹168</span></td></tr></tbody></table></div></section><section class="view" id="addresses" aria-label="Saved" hidden><h2 class="view-title">Saved <em>addresses</em></h2><p class="lede">Addresses you can pick when booking.</p><div class="cards cards-3">
+<div class="card"><div class="card-body"><span class="tag ok">Default pickup</span><h3>Shop</h3><p>4, Bazaar Street, Salem 636001<br>+91 98940 12345</p></div></div>
+<div class="card"><div class="card-body"><span class="tag note">Delivery</span><h3>Home</h3><p>12, Gandhi Road, Kumbakonam 612001<br>+91 98940 12345</p></div></div>
+<div class="card"><div class="card-body"><span class="tag note">Bulk pickups</span><h3>Warehouse</h3><p>Plot 9, SIDCO Estate, Salem 636004<br>+91 94430 55120</p></div></div>
+</div></section><section class="view" id="book" aria-label="Book a" hidden><h2 class="view-title">Book a <em>pickup</em></h2><p class="lede">An agent collects from your door in the slot you choose.</p><section class="panel"><form data-validate="pickup">
+<div class="grid-2"><div class="field "><label for="pk-from">Pickup pincode</label><input class="input" id="pk-from" name="pk-from" type="text" data-v="pincode" maxlength="6" inputmode="numeric" ></div><div class="field "><label for="pk-to">Delivery pincode</label><input class="input" id="pk-to" name="pk-to" type="text" data-v="pincode" maxlength="6" inputmode="numeric" ></div></div>
+<div class="grid-3"><div class="field "><label for="pk-w">Weight (kg)</label><input class="input" id="pk-w" name="pk-w" type="number" data-v="weight" inputmode="decimal" step="0.1" min="0.1" max="50"></div><div class="field"><label for="pk-service">Service</label><select class="input" id="pk-service" name="pk-service" data-v="select"><option value="">Choose…</option><option value="standard">Standard surface</option><option value="nextday">Next-day</option><option value="sameday">Same-day</option></select></div><div class="field "><label for="pk-date">Pickup date</label><input class="input" id="pk-date" name="pk-date" type="date" data-v="date" ></div></div>
+<div class="field"><label for="pk-notes">Notes for the agent</label><textarea class="input" id="pk-notes" data-v="text" maxlength="600" rows="3"></textarea></div>
+<button class="btn btn-primary" type="submit">Book pickup</button>
+</form></section></section></main>
+</div>
+</body>
+</html>

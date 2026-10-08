@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — Stackly</title>
+<meta name="description" content="Sign in to your Stackly account.">
+<meta name="theme-color" content="#0F1E33">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="auth"><main class="auth-main" id="main"><a class="auth-logo" href="index.html" data-home-logo aria-label="Stackly home"><img src="logo-light.webp" alt="Stackly" width="138" height="40"></a>
+<div class="auth-card">
+<p class="notice" id="notice" role="status" hidden></p>
+<span class="label">Sign in</span>
+<h1>Welcome <em>back</em></h1>
+<p class="form-note" style="margin-bottom:22px">Sign in to book pickups and track your parcels.</p>
+<form data-validate="signin" id="signin-form">
+<div class="field" data-v="radio" role="radiogroup" aria-labelledby="role-lbl"><span class="flabel" id="role-lbl">I am a</span><div class="roles">
+<label class="role"><input type="radio" name="role" value="customer"><strong>Customer</strong><span>Send and track parcels</span></label>
+<label class="role"><input type="radio" name="role" value="staff"><strong>Staff</strong><span>Hub, pickups and agents</span></label>
+</div></div>
+<div class="field "><label for="si-email">Email</label><input class="input" id="si-email" name="si-email" type="email" data-v="email" maxlength="64" autocomplete="email" inputmode="email" ></div>
+<div class="field"><label for="si-pass">Password</label><div class="pw-wrap"><input class="input" id="si-pass" name="si-pass" type="password" maxlength="32" autocomplete="current-password" data-v="password"><button class="pw-toggle" type="button" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+<div class="field"><label class="check" for="si-remember"><input type="checkbox" id="si-remember" name="si-remember" data-v="required"><span class="box"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span><span class="txt">Remember me on this device</span></label></div>
+<div class="auth-row"><a href="404.html">Forgotten your password?</a></div>
+<button class="btn btn-primary btn-block" type="submit">Sign in</button>
+</form>
+<p class="auth-alt">New to Stackly? <a href="signup.html">Create account</a></p>
+</div></main>
+<div class="auth-media"><img src="auth-signin.webp" alt="A courier loads parcels into the back of a delivery van at sunset" width="1200" height="2133" ><span class="chip"><span class="dot"></span>2,140 parcels out today</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account — Stackly</title>
+<meta name="description" content="Create a Stackly customer or staff account.">
+<meta name="theme-color" content="#0F1E33">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="auth"><main class="auth-main" id="main"><a class="auth-logo" href="index.html" data-home-logo aria-label="Stackly home"><img src="logo-light.webp" alt="Stackly" width="138" height="40"></a>
+<div class="auth-card">
+<span class="label">Create account</span>
+<h1>Start <em>shipping</em></h1>
+<p class="form-note" style="margin-bottom:22px">Book pickups, track parcels and download invoices.</p>
+<form data-validate="signup" id="signup-form">
+<div class="field" data-v="radio" role="radiogroup" aria-labelledby="role-lbl"><span class="flabel" id="role-lbl">I am a</span><div class="roles">
+<label class="role"><input type="radio" name="role" value="customer"><strong>Customer</strong><span>Send and track parcels</span></label>
+<label class="role"><input type="radio" name="role" value="staff"><strong>Staff</strong><span>Hub, pickups and agents</span></label>
+</div></div>
+<div class="grid-2"><div class="field "><label for="su-first">First name</label><input class="input" id="su-first" name="su-first" type="text" data-v="name" maxlength="16" autocomplete="given-name" ></div><div class="field "><label for="su-last">Last name</label><input class="input" id="su-last" name="su-last" type="text" data-v="name" maxlength="16" autocomplete="family-name" ></div></div>
+<div class="field "><label for="su-email">Email</label><input class="input" id="su-email" name="su-email" type="email" data-v="email" maxlength="64" autocomplete="email" inputmode="email" ></div>
+<div class="field "><label for="su-phone">Mobile number</label><input class="input" id="su-phone" name="su-phone" type="tel" data-v="phone" maxlength="10" autocomplete="tel-national" inputmode="numeric" ></div>
+<div class="field"><label for="su-pass">Password</label><div class="pw-wrap"><input class="input" id="su-pass" name="su-pass" type="password" maxlength="32" autocomplete="new-password" data-v="password" aria-describedby="pw-hint"><button class="pw-toggle" type="button" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+<p class="form-note" id="pw-hint" style="margin:-14px 0 20px">8–32 characters with an uppercase letter, a lowercase letter, a number and a symbol.</p>
+<div class="field"><label for="su-pass2">Confirm password</label><div class="pw-wrap"><input class="input" id="su-pass2" name="su-pass2" type="password" maxlength="32" autocomplete="new-password" data-v="confirm" data-match="su-pass"><button class="pw-toggle" type="button" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+<div class="field"><label class="check" for="terms"><input type="checkbox" id="terms" name="terms"><span class="box"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span><span class="txt">I agree to the <a href="404.html">Terms of service</a> and <a href="404.html">Privacy policy</a>.</span></label></div>
+<button class="btn btn-primary btn-block" type="submit">Create account</button>
+</form>
+<p class="auth-alt">Already have an account? <a href="signin.html">Sign in</a></p>
+</div></main>
+<div class="auth-media"><img src="auth-signup.webp" alt="Neatly stacked plain white parcel boxes" width="1200" height="1800" ><span class="chip"><span class="dot"></span>Free pickup on your first parcel</span></div>
+</div>
+<div class="modal" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="tm-h"><div class="modal-card"><h3 id="tm-h">Please accept the terms</h3><p>Tick the box to agree to the Terms of service and Privacy policy before creating your account.</p><button class="btn btn-primary" type="button" data-close>OK, go back</button></div></div>
+</body>
+</html>
